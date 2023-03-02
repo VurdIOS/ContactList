@@ -6,17 +6,18 @@
 //
 
 import UIKit
+// MARK: - ContactListViewController
 
 class ContactListViewController: UITableViewController {
 
+    // MARK: - Private Values
     private var contactList = Contact.generateContacts(from:
                                                         namesData,
                                                        secondNamesData,
                                                        phoneNumbersData,
                                                        emailData)
 
-    
-    
+    // MARK: - Life Cycle Of View
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
@@ -38,13 +39,11 @@ class ContactListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         let contact = contactList[indexPath.row]
+        
         content.text = "\(contact.fullName)"
         content.image = UIImage(named: "ContactIcon")
         cell.contentConfiguration = content
         
-        
         return cell
-        
     }
-    
 }

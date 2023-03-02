@@ -4,7 +4,7 @@
 //
 //  Created by Камаль Атавалиев on 02.03.2023.
 //
-
+// MARK: - Contact Struct Model
 struct Contact {
     let name: String
     let secondName: String

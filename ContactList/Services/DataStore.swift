@@ -4,6 +4,7 @@
 //
 //  Created by Камаль Атавалиев on 02.03.2023.
 //
+// MARK: - Data Store
 
 let namesData = [
     "Kamal",
