@@ -34,11 +34,12 @@
                             <outlet property="delegate" destination="lLB-tt-cxw" id="bgD-v0-j9a"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="kKE-Ki-sSQ"/>
                     <navigationItem key="navigationItem" title="Contact List" id="1IL-u4-3jn"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T42-gc-ADT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="155" y="-7"/>
+            <point key="canvasLocation" x="302" y="-7"/>
         </scene>
         <!--Contact Info View Controller-->
         <scene sceneID="Ky4-hd-JPV">
@@ -48,16 +49,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qbM-Gq-5xD">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="qbM-Gq-5xD">
                                 <rect key="frame" x="16" y="175" width="361" height="75"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdn-u1-YfC">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="29.666666666666668"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdn-u1-YfC">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="28.666666666666668"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dN-XF-tea">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dN-XF-tea">
                                         <rect key="frame" x="0.0" y="49.666666666666657" width="361" height="25.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <nil key="textColor"/>
@@ -85,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozG-hV-ezj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886" y="-7"/>
+            <point key="canvasLocation" x="1184" y="-7"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gjf-rT-ePi">
@@ -96,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="lLB-tt-cxw" kind="relationship" relationship="rootViewController" id="44E-AD-hdF"/>
+                        <segue destination="lLB-tt-cxw" kind="relationship" relationship="rootViewController" id="DOV-bP-1uH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVP-0j-Kzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

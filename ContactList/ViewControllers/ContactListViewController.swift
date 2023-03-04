@@ -25,12 +25,12 @@ class ContactListViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let contactInfoVC = segue.destination as? ContactInfoViewController
+        
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         contactInfoVC?.contact = contactList[indexPath.row]
     }
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         contactList.count
     }
@@ -46,4 +46,5 @@ class ContactListViewController: UITableViewController {
         
         return cell
     }
+
 }
