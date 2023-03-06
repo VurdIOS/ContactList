@@ -11,11 +11,7 @@ import UIKit
 class ContactListViewController: UITableViewController {
 
     // MARK: - Private Values
-    private var contactList = Contact.generateContacts(from:
-                                                        namesData,
-                                                       secondNamesData,
-                                                       phoneNumbersData,
-                                                       emailData)
+    private var contactList = Contact.generateContacts()
 
     // MARK: - Life Cycle Of View
     override func viewDidLoad() {

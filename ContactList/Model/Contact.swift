@@ -15,23 +15,23 @@ struct Contact {
     var fullName: String {
         "\(name) \(secondName)"
     }
-    static func generateContacts(from names: [String],
-                                 _ secondNames: [String],
-                                 _ phoneNumbers: [String],
-                                 _ email: [String]) -> [Contact] {
+    static func generateContacts() -> [Contact] {
         
-        let namesShuf = names.shuffled()
-        let secondNamesShuf = secondNames.shuffled()
-        let phoneNumbersShuf = phoneNumbers.shuffled()
-        let emailShuf = email.shuffled()
+        
+        let namesShuf = DataStore.shared.namesData.shuffled()
+        let secondNamesShuf = DataStore.shared.secondNamesData.shuffled()
+        let phoneNumbersShuf = DataStore.shared.phoneNumbersData
+        let emailShuf = DataStore.shared.emailData.shuffled()
         
         var contactList: [Contact] = []
         
-        for index in 0...names.count - 1 {
-            contactList.append(Contact(name: namesShuf[index],
-                                       secondName: secondNamesShuf[index],
-                                       phoneNumber: phoneNumbersShuf[index],
-                                       email: emailShuf[index]))
+        for index in 0..<namesShuf.count {
+            contactList.append(Contact(
+                name: namesShuf[index],
+                secondName: secondNamesShuf[index],
+                phoneNumber: phoneNumbersShuf[index],
+                email: emailShuf[index])
+            )
         }
         return contactList
     }
