@@ -8,10 +8,10 @@
 import UIKit
 // MARK: - ContactListViewController
 
-class ContactListViewController: UITableViewController {
+final class ContactListViewController: UITableViewController {
 
     // MARK: - Private Values
-    private var contactList = Contact.generateContacts()
+    var contactList: [Contact] = []
 
     // MARK: - Life Cycle Of View
     override func viewDidLoad() {

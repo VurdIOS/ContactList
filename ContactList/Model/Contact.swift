@@ -6,6 +6,8 @@
 //
 // MARK: - Contact Struct Model
 struct Contact {
+    
+    
     let name: String
     let secondName: String
     let phoneNumber: String

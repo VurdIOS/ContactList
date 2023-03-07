@@ -7,7 +7,8 @@
 
 import UIKit
 // MARK: - ContactInfoViewController
-class ContactInfoViewController: UIViewController {
+
+final class ContactInfoViewController: UIViewController {
 
     // MARK: -IB Outlets
     @IBOutlet var PhoneLabel: UILabel!
